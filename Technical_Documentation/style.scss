@@ -1,0 +1,115 @@
+$background: #f4f7f6;
+$off-backround: #f3f3f3;
+$text-color: rgb(46, 37, 37);
+$border-color: rgba(0,22,22,0.4);
+$link: rgb(190, 56, 56);
+$link-highlight: rgb(44, 8, 8);
+
+body {
+  background-color: $background;
+  color: $text-color;
+  font-family: "Poppins", sans-serif;
+  font-size: 3vw;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+h1 {
+  font-size: 6vw;
+  height: 6vw;
+  margin-top: 0px;
+}
+
+li {
+  list-style: none;
+  font-size: 2vw;
+  border-bottom: 1px solid $border-color;
+    width: 100%;
+    height: auto;
+}
+
+ul {
+  /* padding-left: 0px; removed the default padding of a list */
+  padding-left: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: $link;
+}
+
+a:hover {
+  color: rgb(66, 20, 20);
+}
+.main-section {
+    text-align: left;
+    border-bottom: 2px solid $link-highlight;
+}
+.nav-links-title {
+    padding: 0;
+    margin: 0;
+    margin-top: 0;
+}
+.section-header {
+    font-size: 3vw;
+}
+footer {
+    text-align: left;
+}
+h4 {
+    margin-left: 3vw;
+    padding-top: 3vh;
+}
+code {
+    background-color: $off-backround;
+    border: 1px solid #e0e0e0;
+}
+pre {
+    margin-left: 3vw;
+    background-color: $off-backround;
+    border: 1px solid #e0e0e0;
+    code {
+        border: 0;
+    }
+}
+p {
+    margin-left: 3vw;
+}
+@media screen and (min-width: 720px) {
+    body {
+        font-size: 20px;
+    }
+    main {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .navbar {
+        text-align: left;
+        height:100%;
+        border-right:solid;
+        border-color: $border-color;
+    }
+    .main-section {
+        font-size: 16px;
+        padding-left: 16px;
+    }
+    .section-header h3 {
+        font-size: 30px;
+    }
+    li {
+        font-size: 20px;
+    }
+    .nav-links-title {
+        margin-top: 5px;
+        padding-top: 0;
+        font-size: 30px;
+    }
+    ul {
+        align-items: start;
+    }
+}

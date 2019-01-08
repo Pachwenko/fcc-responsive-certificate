@@ -1,0 +1,62 @@
+header {
+  text-align: center;
+}
+
+main {
+  text-align: center;
+}
+
+div {
+  padding: 3px;
+}
+
+.radio-button-start {
+  display: inline-block;
+}
+
+.radio-label {
+  display: block;
+}
+
+.question {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto;
+  align-items: center;
+  text-align: left;
+}
+
+.questions-with-scale {
+  border: 5px groove black;
+}
+
+.scale-description {
+  width: 100%;
+}
+
+.checkbox-question {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.checkboxes {
+  text-align: start;
+}
+
+#survey-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.scale-start {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.descriptor {
+  justify-content: flex-start;
+}

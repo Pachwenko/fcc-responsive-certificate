@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Survey Form</title>
+</head>
+
+<!--<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+-->
+<header>
+  <h1 id="title">Survey Form</h1>
+</header>
+<main>
+  <body>
+    <p id="description">How can the Software Engineering Curriculum improve?</p>
+    <form id="survey-form">
+      <div class="text-input">
+          <label id="name-label" for="name">* Name: </label>
+          <input autofocus name="name" id="name" class="input-field" type="text" placeholder="Enter your name" maxlength="255" required>
+        </div>
+      <div class="text-input">
+        <label id="email-label" for="email">* Email: </label>
+        <input name="email" id="email" class="input-field" type="email" placeholder="Enter your email" maxlength="255" required>
+      </div>
+      <div class="text-input">
+        <label id="number-label" for="year">* Year: </label>
+        <input type="number" name="year" id="number" type="number" min="2015" max="2100" class="input-field" placeholder="Year" maxlength="255" required>
+      </div>
+      <div class="form-element">
+        <label id="dropdown" for"current role"> Current role: </label>
+        <select id="dropdown" name="currentPos" class="dropdown">
+          <option value="student">Student</option>
+          <option value="learner">Faculty</option>
+          <option value="preferNo">Graduate</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-element">
+        <ul style="list-style: none;" class="questions-with-scale">
+          <label for="scale-description" class="scale-description">0 being the worst, 1 being somewhat bad, 2 being unsure, 3 being good, and 4 being the very best</label>
+        <br>
+          <div class="question">
+            <div class="descriptor">
+              <label for="recommendation">How likely are you to recommend the program to a friend?</label>
+            </div>
+            <div class="scale-start">
+              <div class="radio-button-start">
+                <label class="radio-label">0</label>
+                <input name="radio-buttons" value="0"  type="radio" class="userRatings" ></li>
+              </div>
+              <div class="radio-button-start">
+                <label class="radio-label">1</label>
+                <input name="radio-buttons" value="1"  type="radio" class="userRatings" ></li>
+              </div>
+              <div class="radio-button-start">
+                <label class="radio-label">2</label>
+                <input name="radio-buttons" value="2"  type="radio" class="userRatings" ></li>
+              </div>
+              <div class="radio-button-start">
+                <label class="radio-label">3</label>
+                <input name="radio-buttons" value="3"  type="radio" class="userRatings" ></li>
+              </div>
+              <div class="radio-button-start">
+                <label class="radio-label">4</label>
+                <input name="radio-buttons" value="4"  type="radio" class="userRatings" ></li>
+              </div>
+            </div>
+          </div>
+
+          <div class="question">
+            <div class="descriptor">
+              <label for="recommendation">How much do you like cats?</label>
+            </div>
+            <div class="scale-start">
+              <div class="radio-button">
+                <label class="radio-label"></label>
+                <input name="radio-buttons" value="0"  type="radio" class="userRatings" ></li>
+              </div>
+              <div class="radio-button">
+                <label class="radio-label"></label>
+                <input name="radio-buttons" value="1"  type="radio" class="userRatings" ></li>
+              </div>
+              <div class="radio-button">
+                <label class="radio-label"></label>
+                <input name="radio-buttons" value="2"  type="radio" class="userRatings" ></li>
+              </div>
+              <div class="radio-button">
+                <label class="radio-label"></label>
+                <input name="radio-buttons" value="3"  type="radio" class="userRatings" ></li>
+              </div>
+              <div class="radio-button">
+                <label class="radio-label"></label>
+                <input name="radio-buttons" value="4"  type="radio" class="userRatings" ></li>
+              </div>
+            </div>
+          </div>
+        </ul>
+        <ul id="preferences" style="list-style: none;">
+          <div class="checkbox-question">
+            <div class="descriptor">
+              <label for="things-to-improve">What are some things that could be improved?</label>
+            </div>
+            <div class="checkboxes">
+              <li class="checkbox"><input name="checkboxes" value="1" type="checkbox">Required Courses</li>
+              <li class="checkbox"><input name="checkboxes" value="2" type="checkbox">Elective options</li>
+              <li class="checkbox"><input name="checkboxes" value="3" type="checkbox">Lab equipment</li>
+            </div>
+          </div>
+        </ul>
+        <div class="checkbox-question">
+          <div class="descriptor">
+            <label for="text-entry">Enter any sugguestions here:</label>
+          </div>
+          <div class="text-box">
+            <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your sugguestions here..."></textarea>
+          </div>
+        </div>
+       <button id="submit" type="submit"><label for="submit-box">Submit</label></button>
+    </form>
+  </body>
+</main>
+
+
+
+</html>

@@ -1,0 +1,84 @@
+* {
+  background-color: #f4f7f6;
+  color: rgb(63, 62, 62);
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5vw;
+}
+
+header {
+  display: flex;
+}
+
+.logo {
+  display: block;
+  flex-grow: 2;
+}
+
+#nav-bar li {
+  list-style: none;
+  justify-content: flex-end;
+  padding: 3px;
+  border: 1px solid rgb(126, 123, 123);
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+
+#nav-bar ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: auto;
+  height: 0px;
+}
+
+a {
+  color: rgb(80, 82, 83);
+  text-decoration: none;
+}
+
+.video-responsive{
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+  margin: 10vh;
+}
+.video-responsive iframe{
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.forms {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5vh;
+}
+
+.copyright {
+  text-align: right;
+}
+
+#features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+@media screen and (max-width: 600px) {
+  /* For small screens */
+  header {
+    flex-direction: column;
+  }
+  .logo {
+    text-align: center;
+  }
+  #nav-bar ul {
+    padding: 5px;
+    justify-content: space-evenly;
+  }
+}

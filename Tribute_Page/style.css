@@ -1,0 +1,49 @@
+main {
+    text-align: center;
+    background: white;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    color: rgb(51, 51, 51);
+  }
+
+  footer {
+    display: block;
+  }
+
+  header {
+    display: block;
+  }
+
+  hr {
+    width: 100%;
+    display: block;
+  }
+
+  .sidebyside {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #tribute-info {
+    margin: 0px 20% 0px 20%;
+  }
+
+  #image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+
+  #image:hover {
+    transform: scale(1.1);
+  }
+
+  #img-div {
+    flex-grow: 2;
+    width: 50%;
+  }
